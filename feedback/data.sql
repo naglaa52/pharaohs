@@ -1,0 +1,13 @@
+CREATE DATABASE feedback_form;
+USE feedback_form;
+
+CREATE TABLE feedback (
+  id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  firstname VARCHAR(30) NOT NULL,
+  lastname VARCHAR(30) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  phone VARCHAR(20) NOT NULL,
+  jobtitle VARCHAR(30) NOT NULL,
+  opinion TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
